@@ -154,7 +154,7 @@ spark.test_each <- function(object, kernel_mat, check_positive = FALSE, verbose 
 			## to return
 			res_each <- data.frame(geneid = names(object@res_vc)[ig], 
 			                       sw=davies_sw, converged=converged, 
-			                       stat=rest$S0,kk_sw=kk_sw,df_sw=df_sw)
+			                       stat=rest$S0,kk_sw=kk_sw,df_sw=df_sw, newInfoM=newInfoM, ee_sw=ee_sw)
 			
 		}# end parallel foreach
 	}else if(fit.model=="gaussian"){
