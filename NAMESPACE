@@ -1,4 +1,4 @@
-useDynLib(SPARK, .registration=TRUE)
+useDynLib(SPARK0, .registration=TRUE)
 exportPattern("^[[:alpha:]]+")
 importFrom(Rcpp, evalCpp)
 
